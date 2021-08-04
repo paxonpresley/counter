@@ -1,0 +1,70 @@
+/* setup a better font */
+*, ::before, ::after {
+    font-family: monospace;
+}
+
+main {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 30pt;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 40pt;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 1rem;
+}
+
+.controls button {
+    border-width: .3rem;
+    border-style: solid;
+    border-radius: 10%;
+    height: 2.5rem;
+}
+
+.controls button:hover {
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+
+.controls .decrease {
+    border-color: #990808;
+    background-color: #ffd4d4;
+}
+
+.controls .decrease:hover {
+    border-color: #912424;
+}
+
+.controls .reset {
+    border-color: #494949;
+    background-color: #dfdfdf;
+}
+
+.controls .reset:hover {
+    border-color: #555555;
+}
+
+.controls .increase {
+    border-color: #3bb010;
+    background-color: #d2ffc2;
+}
+
+.controls .increase:hover {
+    border-color: #55b033;
+}
